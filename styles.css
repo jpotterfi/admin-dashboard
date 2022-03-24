@@ -205,11 +205,12 @@ li {
                    "projects trending"1fr
                    /3fr 1fr;
     box-shadow: inset 0 0 5px rgb(0 0 0 / 25%);
+    padding: 16px;
 }
 
 .projects {
     grid-area: projects;
-    padding: 16px;
+    
 }
 
 .section-header{
@@ -245,6 +246,7 @@ li {
 .card-title {
     font-size: 24px;
     font-weight: 600;
+    
 }
 
 .card-content {
@@ -254,12 +256,47 @@ li {
 
 .announcements{
     grid-area: announcements;
-    background-color: lightgreen;
+    padding: 16px;
+    
+}
+
+.announcement-section {
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left:30px;
+    padding-bottom: 30px;
+    border-bottom: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.announcement-section:nth-of-type(3){
+    border-bottom: none;
+}
+
+.announcement-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.announcements-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.announcement-content {
+    line-height: 125%;
+    font-size: 18px;
 }
 
 .trending{
     grid-area: trending;
-    background-color: lightskyblue;
 }
 
 button {
